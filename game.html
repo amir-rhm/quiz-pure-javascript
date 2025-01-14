@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz | game</title>
+    <link rel="stylesheet" href="styles/reset-custom.css">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+
+    <div class="loader__wrapper">
+        <div class="spinner">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="quiz">
+            <div class="quiz__wrapper">
+                <div class="quiz__info">
+                    <div class="quiz__number">Quiz Number : <span class="quiz__number-text item__score">1</span></div>
+                    <div class="quiz__number">Score : <span class="quiz__score-text item__score">0</span></div>
+                </div>
+
+                <div class="question">
+                    <h2 class="question__title question__item"></h2>
+                    <div class="answer question__item"></div>
+                    <div class="answer question__item"></div>
+                    <div class="answer question__item"></div>
+                    <div class="answer question__item"></div>
+                </div>
+                <div class="buttons">
+                    <a href="index.html" onclick="return confirm('are you sure finish quiz ?')"
+                        class="button">Finish</a>
+                    <a href="#" onclick="return false" class="button nextBtn">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/game.js" ></script>
+
+</body>
+
+</html>
